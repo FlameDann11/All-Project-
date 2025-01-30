@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="kelaa.css" rel="stylesheet">
+<title>KELAA :3</title>
+</head>
+    <body>
+      <h6>© FlameDann</h6>
+      <h1 class="dann">SELAMAT DATANG KELAA</h1>
+      <center>
+      <button id="button">Klik Tombol ini</button>
+      </center>
+            <h2>Mikaila</h2>
+<p id="p-awal">Mikaila atau biasa di panggil kela adalah seorang gadis yang kelakuan nya sangat susah di tebak karena tingkah nya yang unik. Dia berbeda dengan yang lain ,mulai dari kehidupan nya hingga hal yang dia sukai"</p>
+<script src="dist/sweetalert2.all.min.js"></script>
+        <script>
+        // Ambil elemen tombol berdasarkan ID
+        Swal.fire("Selamat datang");
+
+    // Ambil elemen tombol berdasarkan ID
+    const button = document.getElementById('button');
+
+  button.addEventListener('click', function() {
+    // Alert pertama
+    Swal.fire({
+        title: "Melinda Sordino",
+        text: "Hahai"
+    }).then(() => {
+        // Setelah alert pertama ditutup, tampilkan alert kedua
+        return Swal.fire({
+            title: "Bercandaa",
+            text: "Selamat Datang Ya kelaa",
+            icon: 'success'
+        });
+    }).then(() => {
+        // Setelah alert kedua ditutup, tampilkan alert ketiga
+        return Swal.fire({
+            title: 'Etss',
+            text: "Suka Nda?",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: 'purple',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Sukaaa',
+            cancelButtonText: 'nda'
+        });
+    }).then((result) => {
+        if (result.isConfirmed) {
+            Swal.fire({
+              text: "yeyy makasihh",
+              imageUrl: "cis.jpg",
+  imageWidth: 150,
+  imageHeight: 200,
+  imageAlt: "Custom image",
+  imageClass: 'custom-image'
+            });
+        } else {
+          Swal.fire({
+            title: "Oke :)",
+            text: "tindakanmu akan terkirim pada pemilik",
+            showConfirmButton: false,
+            timer: 1800
+        }).then(() => {
+          window.location.href = "https://google.com";
+        });
+    }
+  });
+  });
+    </script>
+<div class="hy">
+  <img src="Kela.png" class="gambar1">
+  <p class="pe">MAKAN TAHU<br>NYUM NYUM</p>
+</div>
+<div class="halo">
+  <img src="kelaaaa.png" class="gambar2">
+  <p class="pep">CISSSS</p>
+</div>
+
+<div class="hy">
+  <img src="Catty.png" class="gambar3">
+  <p class="pepaya">Kucing nya mau kabuur</p>
+</div>
+            <div class="tes">
+        <p class="hah">it's ur pap</p>
+        </div>
+        <div class="slider">
+  <div class="slide">
+    <img src="glasses.png" class="gambar4">
+  </div>
+  <div class="slide">
+    <img src="betmut.png" class="gambar5">
+  </div>
+  <div class="slide">
+    <img src="cute.png" class="gambar6">
+  </div>
+  <!-- tambahkan slide lainnya disini -->
+</div>
+
+
+
+
+            <div class="tes">
+        <p class="judulfotoslide">Yeahhhh</p>
+        </div>
+        <div class="slider">
+  <div class="slide">
+    <img src="kelaabike.jpg" class="gambar4" id="myImage">
+  </div>
+  <div class="slide">
+    <img src="kelaabike2.jpg" class="gambar5" id="myImage2">
+  </div>
+  <div class="slide">
+    <img src="kelaabike3.jpg" class="gambar6-1" id="myImage3">
+  </div>
+    <div class="slide">
+    <img src="kelabike4.jpg" class="gambar6-1" id="myImage4">
+  </div>
+  <!-- tambahkan slide lainnya disini -->
+</div>
+<script>
+  document.getElementById('myImage').onclick = function() {
+Swal.fire({
+  title: "Kece",
+  imageUrl: ('kelaabike.jpg'),
+  showConfirmButton: false
+});
+};
+
+document.getElementById('myImage2').onclick = function() {
+Swal.fire({
+  title: "Kece",
+  imageUrl: ('kelaabike2.jpg'),
+  showConfirmButton: false
+});
+};
+
+document.getElementById('myImage3').onclick = function() {
+Swal.fire({
+  title: "Kece",
+  imageUrl: ('kelaabike3.jpg'),
+  showConfirmButton: false
+});
+};
+
+document.getElementById('myImage4').onclick = function() {
+Swal.fire({
+  title: "Kece",
+  imageUrl: ('kelabike4.jpg'),
+  showConfirmButton: false
+});
+};
+</script>
+    </body>
+</html>
