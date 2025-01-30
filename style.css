@@ -1,0 +1,344 @@
+*{
+   margin: 0;
+   padding: 0;
+   animation: scroll 2s;
+}
+
+body {
+   background: #18191f;
+}
+
+#header {
+   height: 18rem;
+   align-content: center;
+}
+.title-site {
+   
+   align-content: center;
+}
+.title-site h1 {
+   text-align: center;
+   font-family: 'Quicksand';
+   font-size: 3.2rem;
+   letter-spacing: 16px;
+   background: linear-gradient(90deg, aqua, purple); /* Warna gradasi */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; /* Mengisi teks dengan latar belakang */
+}
+
+
+.title-site p {
+   color: white;
+   text-align: center ;
+   font-family: 'Quicksand';
+   font-size: 2.4rem;
+   letter-spacing: 16px;
+}
+
+
+.navbar-container {
+   background: azure;
+   border-radius: 20px;
+   margin: 0 26px;
+}
+
+.nav-item {
+   display: flex;
+   justify-content: flex-start;
+   padding: 1.3rem 0;
+}
+
+.nav-item li {
+   list-style-type: none;
+   margin: 0 25px;
+   font-size: 1.2rem;
+   
+}
+
+.nav-item li a{
+   text-decoration: none;
+   font-family: 'Quicksand';
+   color: black;
+   padding: 10px;
+   border-radius: 5px;
+   transition: all 0.3s ease-in-out;
+}
+
+.nav-item li a:hover {
+   border: 0.3px solid ;
+}
+
+
+#main {
+   margin: 6rem 0;
+   /* background: red; */
+}
+
+.main-content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 5rem 8rem;
+   margin-bottom: 18.6rem;
+}
+
+
+.content-left {
+   flex: 8;
+   /* background: blue; */
+    margin: 0 1rem; 
+}
+
+.content-left h1, p {
+   color: white;
+   font-family: 'Quicksand';
+   text-align: justify;
+}
+
+.content-left p {
+   font-size: 20px;
+}
+
+.content-left h1 {
+   font-size: 3rem ;
+}
+
+.content-right {
+   flex: 3;
+}
+
+.content-right img {
+   width: 250px;
+   height: auto;
+}
+
+.about-cl {
+   margin-bottom: 2rem;
+}
+
+#items-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.items-title {
+   justify-content: center;
+   align-content: center;
+   align-items: center;
+}
+
+.items-title h1 {
+   text-align: center;
+   font-size: 4rem;
+   padding: 0 3rem;
+   margin: 4rem 0;
+   background: linear-gradient(90deg, red, blue); /* Warna gradasi */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; /* Mengisi teks dengan latar belakang */
+}
+
+.items {
+   /* background: white; */
+   display: flex;
+   flex-direction: column;
+   margin: 2rem 0;
+   flex-direction: column;
+}
+
+.items > h1 {
+   text-align: center;
+   background: linear-gradient(90deg, red, blue, orange); /* Warna gradasi */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent; /* Mengisi teks dengan latar belakang */
+}
+
+.title-item-name {
+   color: white;
+   padding: 0 10rem;
+}
+
+.title-item-name h1 {
+   white-space: nowrap;
+}
+
+.item1 {
+   /* background: red; */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 1.3rem 0;
+   white-space: wrap;
+   
+}
+
+.item1 > p {
+   font-size: 10px;
+}
+
+
+
+.item-desk {
+   padding: 23px 26px;
+   margin: 0 2rem;
+  text-align: center;
+  justify-content: center;
+   align-items: center;
+   border: 1px solid;
+}
+
+.item-desk h1 {
+   color: bisque;
+}
+
+.item-desk p {
+   text-align: center;
+}
+
+.item-desk button {
+   background: linear-gradient(90deg, cyan, purple, red);
+   padding: 3px 16px;
+   margin-top: 12px;
+   color: white;
+   font-size: 20px;
+   border: 1px solid white;
+   border-radius: 10px;
+   
+}
+.item-desk button:hover {
+   background: black;
+   
+}
+
+/* Untuk layar kecil seperti ponsel (maksimum lebar 600px) */
+@media (max-width: 1200px) {
+  #header {
+    height: 12rem;
+  }
+
+  .title-site h1 {
+    font-size: 2rem;
+    letter-spacing: 8px;
+  }
+
+  .title-site p {
+    font-size: 1.4rem;
+    letter-spacing: 8px;
+  }
+
+  .navbar-container {
+    margin: 0 10px;
+  }
+
+  .nav-item {
+     justify-content: center;
+    align-items: center;
+    padding: 6px;
+  }
+
+  .nav-item li {
+    margin: 10px 0;
+  }
+
+  .main-content {
+    flex-direction: column;
+    margin: 2rem 1rem;
+  }
+
+  .content-left h1 {
+    font-size: 2rem;
+  }
+
+  .content-left p {
+    font-size: 16px;
+  }
+
+  .content-right img {
+    width: 200px;
+  }
+  
+
+
+  .items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-desk {
+    margin: 1rem 0;
+  }
+}
+
+/* Untuk tablet (maksimum lebar 1024px) */
+@media (max-width: 1400px) {
+  .main-content {
+    margin: 3rem 2rem;
+  }
+
+  .content-left h1 {
+    font-size: 2.5rem;
+  }
+
+  .content-left p {
+    font-size: 18px;
+  }
+
+  .content-right img {
+    width: 220px;
+  }
+
+  .item1 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item-desk {
+    margin: 1rem;
+  }
+}
+
+/* Untuk layar sangat kecil (maksimum lebar 400px) */
+@media (max-width: 400px) {
+  .title-site h1 {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+
+  .title-site p {
+    font-size: 1rem;
+    letter-spacing: 4px;
+  }
+  
+  .content-left p {
+     font-size: 10px;
+  }
+    .content-left h1 {
+     font-size: 1rem;
+  }
+
+  .content-right img {
+    width: 150px;
+  }
+
+  .nav-item li {
+    margin: 5px 0;
+  }
+  
+  .items-title h1 {
+    font-size: 3rem;
+    padding: 0 1rem;
+  }
+
+  .item-desk h1 {
+    font-size: 1rem;
+  }
+
+  .item-desk p {
+    font-size: 0.9rem;
+  }
+  
+  .title-item-name {
+     padding: 0 1rem;
+  }
+}

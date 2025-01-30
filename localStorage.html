@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width= , initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="styleLocal.css" rel="stylesheet">
+   <title>Belajar Login LocalStorage</title>
+</head>
+<body>
+   <div id="loginPage">
+   <input type="text" placeholder="username" id="user">
+   <input type="password" placeholder="password" id="password">
+   <button onclick="onLogin()" id="loginButton">Login</button>
+   <button onclick="outLog()" id="logoutButton">LogOut</button>
+   <br>
+   <br>
+   <h1 id="basicUser">Kamu Adalah User Biasa</h1>
+   <h1 id="adminUser">Kamu Adalah Admin</h1>
+   </div>
+   
+   
+   
+   <script>
+      
+      let user = document.getElementById('user');
+      let password = document.getElementById('password');
+      let adminUser = document.getElementById('adminUser');
+      let basicUser = document.getElementById('basicUser');
+      let loginButton = document.getElementById('loginButton');
+      let logOut = document.getElementById('logoutButton');
+      
+      adminUser.style.display = "none";
+      basicUser.style.display = "none";
+      logOut.style.display = "none";
+      
+      
+      function onLogin() {
+         console.log('Succes');
+         console.log(user.value)
+         console.log(password.value)
+         localStorage.setItem("user", user.value);
+         loginButton.style.display = "none";
+        if(user.value == "admin" && password.value == "admin123") {
+           localStorage.setItem("role", "admin")
+           console.log("you re admin")
+           adminUser.style.display = "block";
+           basicUser.style.display = "none";
+           logOut.style.display = "block"
+        } else {
+           console.log('you re basic user')
+           localStorage.setItem("role", "basic")
+           basicUser.style.display = "block";
+           adminUser.style.display = "none";
+           logOut.style.display = "block"
+        }
+        
+        if(localStorage.getItem('user')) {
+           user.style.display = "none";
+           password.style.display = "none";
+           logOut.style.display = "block"
+        } else {
+         user.style.display = "none";
+           password.style.display = "none";
+           logOut.style.display = "block";
+        }
+      }
+      
+      function outLog() {
+         localStorage.clear();
+         location.reload();
+      }
+      
+   </script>
+</body>
+</html>

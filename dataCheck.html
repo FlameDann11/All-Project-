@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
+   <style>
+      body {
+         text-align: center;
+         font-family: Arial, sans-serif;
+      }
+      
+      .form-container h1 {
+         font-size: 24px;
+         margin-bottom: 20px;
+      }
+      
+      .form-container p {
+         margin: 5px 0;
+      }
+      
+      input, select {
+         padding: 8px;
+         margin: 10px 0;
+         width: 250px;
+         text-align: center;
+      }
+      
+      .option {
+         margin: 10px 0;
+      }
+      
+      button {
+         margin: 2rem 0;
+         background: slateblue;
+         padding: 8px 20px;
+         color: white;
+         border: none;
+         cursor: pointer;
+      }
+
+      button:hover {
+         background-color: mediumslateblue;
+      }
+   </style>
+   <title>FlameDann</title>
+</head>
+<body>
+   
+   <div class="form-container">
+      <h1>Silahkan Masukkan Data Anda</h1>
+      <form>
+         <p>Username</p>
+         <input type="text" name="username" placeholder="Username">
+         
+         <p>Email</p>
+         <input type="email" name="email" placeholder="Email">
+         
+         <div class="option">
+            <p>Jenis Kelamin</p>
+            <select name="jenis_kelamin">
+               <option value="Pria">Pria</option>
+               <option value="Wanita">Wanita</option>
+            </select>
+         </div>
+         
+         <p>Hobi</p>
+         <label>
+            <input type="checkbox" name="hobi" value="membaca"> Membaca
+         </label><br>
+         <label>
+            <input type="checkbox" name="hobi" value="mainBola"> Main bola
+         </label><br>
+         <label>
+            <input type="checkbox" name="hobi" value="menonton"> Menonton
+         </label><br>
+         
+         <button type="submit">Kirim</button>
+      </form>
+   </div>
+   
+</body>
+</html>

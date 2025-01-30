@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="styleKela.css" rel="stylesheet">
+   <script src="script.js"></script>
+   <script src="dist/sweetalert2.all.min.js"></script>
+  
+   <title>Kelaa</title>
+</head>
+<body>
+   <!-- header ---->
+   <header id="header-container">
+      
+      <!-- navigation -->
+      <nav class="navigation-container">
+         
+         <!-- barNavigation -->
+      <ul class="nav-bar">
+            
+      <li> <a href="#" onclick="can()">Beranda</a></li>  
+      <li> <a href="#" onclick="cannot()">Album</a></li>
+      <li> <a href="#" onclick="cannot()">Playlist</a></li>
+            
+      </ul>   <!-- closed unordered list -->
+         
+      </nav>  <!-- closed navigation -->
+       
+        <!-- Title Container -->
+       <div class="title-container">
+          
+          <h1>Welcome To Your Website</h1>
+       
+       </div> <!-- Closed Title Container -->
+   
+   </header> <!-- closed header --> 
+   
+   
+   <!-- Main Container -->
+   <main id="main-container">
+      
+      <!-- Main Content -->
+      <div class="main-content">
+         
+         <!-- OutContent¹ -->
+      <div class="content" onclick="ident()">
+         <h1>Profil Mu</h1>
+         <img src="myqueen.jpg">
+         <p> <em>Klik Tombol Ini</em> </p>
+      </div> <!-- Closed OutContent -->
+      
+      <!-- First Content Container -->
+      <div class="firstContentContainer">
+         
+         <!-- First Content -->
+      <div class="firstContent">
+         <p>Nama : Mikaila </p>
+         <p>Umur : 15 </p>
+         <p>Hobi : ngelukis</p>
+         <p>Sekolah : SMPN 22 MAKASSAR</p>
+      </div> <!-- Closed First Content -->
+      
+       <!-- First Content² -->
+      <div class="firstContent2">
+      <p>Jangan Lupa Kan Ini.</p>
+      </div> <!-- Closed First Content -->
+      
+      </div> <!-- Closed First Content Container -->
+      
+      
+      <!-- Second Content -->
+      <div class="secondContentContainer">
+         
+            <!-- Second Content -->
+         <div class="secondContent">
+            <h1>Tentang</h1>
+            <p>Mikaila, atau biasa di panggil kela ialah seorang gadis remaja berumur 15 tahun yang hidup di kota makassar. Dia memiliki pengetahuan yang luas tentang makna dari beberapa lagu yang dia dengar. Dia juga memiliki kriteria karakter yang mudah bergaul dengan orang". Dia adalah gadis yang paling berarti <i>untukku</i>. Sampai sekarang di menjalani hidupnya seperti biasa.</p>
+         </div>  <!-- Closed Second Content -->
+         
+         
+          <!-- Second Content 2 -->
+         <div class="secondContent2">
+            <div class="secondContent2-title">
+            <h1>Ur Picture</h1>
+            </div>
+            <div class="secondContent2-image">
+            <img src="kaila.jpg">
+            <img src="kaila2.jpg">
+            <img src="kaila3.jpg">
+            </div>
+         </div> <!-- Closed Second Content 2 -->
+         
+         
+      </div> <!-- Closed Second Content Container -->
+      
+      </div> <!-- Closed Main Content -->
+      
+      
+      
+      
+   </main>
+      
+
+   <script>
+      const Toast = Swal.mixin({
+  toast: true,
+  position: "top-end",
+  showConfirmButton: false,
+  timer: 2800,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.onmouseenter = Swal.stopTimer;
+    toast.onmouseleave = Swal.resumeTimer;
+  }
+});
+Toast.fire({
+  icon: "success",
+  title: "Berhasil Masuk !"
+});
+   </script>
+</body>
+</html>

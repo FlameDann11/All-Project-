@@ -1,0 +1,538 @@
+
+body {
+   background-color: #18191f;
+   margin: 0;
+   font-family: Arial, sans-serif;
+}
+
+
+
+
+/* HEADER */
+
+
+#header-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px; /* Ganti height dengan padding */
+}
+
+/* NAVIGATION CONTAINER */
+
+.navigation-container {
+   display: flex;
+   justify-content: center;
+   ; /* Pastikan elemen melebar penuh */
+   margin-bottom: 60px; /* Tambahkan jarak dari elemen lainnya */
+}
+
+.nav-bar {
+   display: flex;
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+}
+
+.nav-bar li {
+   margin: 0 4rem; /* Sesuaikan jarak antar item */
+}
+
+.nav-bar li a {
+   text-decoration: none;
+   color: white;
+   background-color: blue;
+   border-radius: 15px;
+   padding: 15px 30px; 
+   font-size: 1.5rem; 
+}     /* CLOSED NAVIGATION */
+
+
+
+
+ /* TITLE CONTAINER */
+.title-container {
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   margin-top: 20px;
+}
+
+.title-container h1 {
+   background-color: white;
+   color: blue;
+   font-size: 3.2rem;
+   padding: 20px 9rem;
+   border-radius: 20px;
+}    /* CLOSED TITLE CONTAINER */
+
+
+
+/* MAIN CONTAINER */
+#main-container {
+   
+   display: flex;
+   justify-content: space-evenly;
+   margin: 4rem 0;
+}
+
+
+/* MAIN CONTENT CONTAINER */
+.main-content {
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   
+}
+
+
+/* OUTCONTENT */
+.content {
+  background: linear-gradient(blue, purple);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 0;
+  margin: 0 26rem;
+  border-radius: 1.7rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+  
+}
+
+.content h1 {
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+}
+
+.content p {
+   font-size: 37px;
+   color: white;
+}
+
+.content img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+/* FIRST CONTENT CONTAINER */
+.firstContentContainer {
+   display: flex;
+   justify-content: space-evenly;
+   padding: 2rem;
+}
+
+/* CONTENT */
+.firstContent, .firstContent2{
+   margin: 3rem 0;
+   background: linear-gradient(blue, purple);
+   border-radius: 32px;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   padding: 10px;
+   margin: 0 2rem;
+   text-align: center;
+} 
+
+.firstContent {
+   flex: 4;
+}
+
+.firstContent2 {
+   flex: 5;
+   white-space: wrap;
+   padding-right: 2.4rem;
+}
+
+.firstContent p, .firstContent2 p {
+   font-family: Arial, Comic Sans MS;
+   margin-left: 2rem;
+   font-size: 26px;
+   color: White;
+   text-align: left;
+}
+.firstContent p {
+   text-align: left;
+}
+
+.firstContent2 p {
+   text-align: left;
+}
+
+
+
+
+
+
+/* SECOND CONTENT CONTAINER */
+.secondContentContainer {
+   display: flex;
+   flex-direction: column;
+   
+}
+
+.secondContent, .secondContent2 {
+   padding: 2rem 2.4rem;
+   margin: 2rem 5rem;
+   border-radius: 17px;
+   background: linear-gradient(blue,purple);
+}
+
+
+.secondContent h1, .secondContent2 h1 {
+   color: white;
+   font-size: 53px;
+}
+
+.secondContent p {
+   font-size: 25px;
+   color: aquamarine;
+}
+
+.secondContent2 {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.secondContent2-title {
+   justify-content: center;
+   text-align: center;
+}
+
+.secondContent2-image {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.secondContent2 img {
+   margin: 0 1rem;
+   width: 200px;
+   height: auto;
+}
+
+
+@media only screen and (max-width: 1100px) {
+ body {
+    
+ }
+ 
+ .title-container h1 {
+    font-size: 30px;
+ }
+ 
+ .content {
+    margin: 0 16rem;
+    padding: 0.5rem;
+ }
+ 
+ .content img {
+    width: 150px;
+    height: auto;
+ }
+ 
+ .content p {
+    font-size: 15px;
+ }
+ 
+ 
+ .secondContent2-image img {
+    width: 160px;
+    height: auto;
+ }
+}
+
+@media only screen and (max-width: 950px) {
+   
+   body {
+      
+   }
+   
+   .firstContent p, .firstContent2 p {
+      font-size: 17px;
+   }
+   
+   .secondContent h1 {
+      font-size: 30px;
+      
+   }
+   
+   .secondContent p {
+      font-size: 20px;
+
+   }
+   
+   .secondContent2-image img {
+    width: 130px;
+    height: auto;
+ }
+}
+
+
+@media only screen and (max-width: 770px ) {
+   body {
+      
+   }
+   
+   .firstContentContainer {
+      flex-direction: column;
+   }
+   
+   .nav-bar li a {
+      font-size: 15px;
+   }
+   
+    .title-container h1 {
+    font-size: 23px;
+ }
+ 
+ .content {
+    margin: 0 14rem;
+    padding: 0.5rem;
+ }
+ 
+ .content h1 {
+    font-size: 17px;
+ }
+ 
+ .content img {
+    width: 120px;
+    height: auto;
+ }
+ 
+ .content p {
+    font-size: 13px;
+ }
+ 
+ 
+  .secondContent h1 {
+      font-size: 25px;
+      
+   }
+   
+   .secondContent p {
+      font-size: 13px;
+
+   }
+ 
+  .secondContent2-image img {
+    width: 110px;
+    height: auto;
+ }
+   
+}
+
+
+@media only screen and (max-width: 655px) {
+   body {
+      
+   }
+   
+   .nav-bar li {
+   margin: 0 1rem; /* Sesuaikan jarak antar item */
+}
+   
+   .content img {
+      width: 100px;
+   }
+   
+   .firstContent p, .firstContent2 p{
+      font-size: 10px;
+   }
+   
+   .secondContent2-title h1 {
+      font-size: 24px;
+   }
+   
+   .firstContent2 {
+      padding: 0;
+    margin: 1rem 3rem;
+   }
+   
+   .secondContent2-image img {
+      width: 100px;
+      height: auto;
+   }
+}
+
+
+@media only screen and (max-width: 636px) {
+   body {
+      
+   }
+   
+   .nav-bar li a {
+      font-size: 11px;
+      padding: 13px 25px; 
+   }
+   
+   .nav-bar li {
+      margin: 0 1rem;
+   }
+   
+   .title-container h1 {
+      font-size: 15px;
+      padding: 20px 3rem;
+   }
+   
+   .content p {
+      font-size: 10px;
+   }
+   
+   .content img {
+      width: 60px;
+      height: auto;
+   }
+   
+   .firstContent p, .firstContent2 p{
+      font-size: 10px;
+   }
+   .firstContent {
+      margin: 0 2rem;
+   }
+   
+   .secondContent h1 {
+      font-size: 20px;
+   }
+   
+   .secondContent p {
+      font-size: 10px;
+   }
+}
+
+
+@media only screen and (max-width: 600px) {
+   body {
+      
+   }
+   
+   
+   .content {
+      margin: 0 10rem;
+   }
+   .content img {
+      width: 30px;
+   }
+   
+   .content h1 {
+      font-size: 15px;
+   }
+   
+   .content p {
+      font-size: 6px;
+   }
+   
+   .firstContent p, .firstContent2 p {
+      font-size: 5px;
+   }
+   
+   .firstContent {
+      padding: 10px;
+      margin: 0 7rem;
+   }
+   
+   .firstContent2 {
+      margin: 2rem  7rem;
+   }
+   
+   .secondContent h1 {
+      font-size: 15px;
+   }
+   
+   .secondContent p {
+      font-size: 6px;
+   }
+   
+   .secondContent2 {
+      padding: 10px;
+   }
+   .secondContent2-title h1 {
+      font-size: 15px ;
+   }
+   .secondContent2-image img {
+      width: 56px;
+      height: auto;
+   }
+}
+
+
+@media only screen and (max-width: 400px) {
+   body {
+      
+   }
+
+   .nav-bar {
+      
+      align-items: center;
+      padding: 0;
+   }
+
+   .nav-bar li {
+      margin: 5px 15px;
+   }
+
+   .nav-bar li a {
+      font-size: 10px;
+      padding: 8px 15px;
+   }
+
+   .content {
+      margin: 0 2rem;
+      padding: 10px;
+   }
+
+   .content h1 {
+      font-size: 14px;
+   }
+
+   .content img {
+      width: 60px;
+      height: auto;
+   }
+
+   .content p {
+      font-size: 10px;
+   }
+
+   .firstContent, .firstContent2 {
+      padding: 10px;
+      margin: 1rem;
+   }
+
+   .firstContent p, .firstContent2 p {
+      font-size: 12px;
+   }
+
+   .secondContent {
+      padding: 15px;
+   }
+
+   .secondContent h1 {
+      font-size: 16px;
+   }
+
+   .secondContent p {
+      font-size: 12px;
+   }
+
+   .secondContent2-title h1 {
+      font-size: 14px;
+   }
+
+   .secondContent2-image {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   .secondContent2-image img {
+      width: 70px;
+      height: auto;
+      margin: 5px;
+   }
+}

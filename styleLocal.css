@@ -1,0 +1,52 @@
+* {
+   overflow-x: hidden;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: #e72883;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem 0;
+  justify-content: center;
+}
+#header h1 {
+   text-align: center;
+   
+}
+
+
+#main {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+}
+
+#main h3 {
+   color: white;
+}
+
+.content {
+   display: flex;
+   flex-direction: column;
+   margin: 2rem 0;
+}
+
+.content a, .content button {
+   margin: 0.3rem;
+   text-decoration: none;
+   color: azure;
+   background: blue;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+p {
+   font-size: 1px;
+}
+
